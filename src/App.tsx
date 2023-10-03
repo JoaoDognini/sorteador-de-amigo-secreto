@@ -1,14 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Cabecalho from './componentes/Cabecalho';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { RecoilRoot } from "recoil";
+import Formulario from "./componentes/Formulario";
 
 function App() {
 	return (
-    <>
-		<Cabecalho />
-	</>
-  );
+		<BrowserRouter>
+			<RecoilRoot>
+				<Routes>
+					<Route path="/" element={<Formulario />} />
+				</Routes>
+			</RecoilRoot>
+		</BrowserRouter>
+	);
 }
 
 export default App;
