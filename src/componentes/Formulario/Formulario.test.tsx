@@ -1,7 +1,7 @@
 // Jest
 
 import { fireEvent, render, screen } from "@testing-library/react"
-import Formulario from "./Formulario";
+import Formulario from ".";
 import { RecoilRoot } from 'recoil'
 import { act } from "react-dom/test-utils";
 
@@ -119,4 +119,3 @@ describe('Comportamento do Formulario.tsx', () => {
 		expect(mensagemErro).toBeNull();
 	})
 })
-

@@ -8,6 +8,7 @@ function App() {
 			<RecoilRoot>
 				<Routes>
 					<Route path="/" element={<Formulario />} />
+					<Route path="/sorteio" element={<Formulario />} />
 				</Routes>
 			</RecoilRoot>
 		</BrowserRouter>
