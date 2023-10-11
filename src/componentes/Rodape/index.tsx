@@ -14,13 +14,15 @@ export default function Rodape() {
 	}
 
 	return (
-		<footer>
-			<button
+		<footer className={styles.rodape}>
+			<button 
+				className={styles.rodape_botao}
 				disabled={participantes.length < 3}
 				onClick={() => iniciar()}
 			>
-				Iniciar brincadeira
+				Iniciar<br />brincadeira!
 			</button>
+			<img src='/imagens/sacolas.png' alt='Desenho de sacolas de compras' />
 		</footer>
 	)
 }

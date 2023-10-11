@@ -1,0 +1,54 @@
+.sorteio_form {}
+
+.sorteio_botao,
+.sorteio_select {
+	border: 2px solid black;
+	box-shadow: 0px 2px 0px 1px #000000;
+	box-sizing: border-box;
+}
+
+.sorteio_select {
+	width: 50%;
+	border-radius: 30px;
+	text-align: center;
+	height: 50px;
+	font-size: 20px;
+}
+
+.sorteio_select:focus {
+	outline: none;
+}
+
+.sorteio_select_opcao {}
+
+.sorteio_texto {
+	padding: 2rem;
+	font-size: 24px;
+}
+
+.sorteio_botao {
+	background: #FE652B;
+	color: white;
+	padding: 1rem 1rem;
+	border-radius: 45px;
+	font-weight: 700;
+	font-size: 20px;
+	cursor: pointer;
+	width: 155px;
+	margin-bottom: 1rem;
+}
+
+.sorteio_botao:hover {
+    background-color: #4B69FD;
+}
+
+.sorteio_botao:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.sorteio_resultado_amigo {
+	color: #FE652B;
+	font-size: 24px;
+	padding: 2rem 1rem;
+}

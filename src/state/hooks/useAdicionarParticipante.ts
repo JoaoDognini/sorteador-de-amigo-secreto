@@ -5,8 +5,11 @@ export function useAdicionarParticipante() {
 	const setListaParticipantes = useSetRecoilState(listaParticipantesState);
 	const setErro = useSetRecoilState(erroState);
 	const lista = useRecoilValue(listaParticipantesState);
+	
 	return (novoParticipante: string) => {
-		if (lista.includes(novoParticipante)) {
+		const repetido = lista.find(participante => participante.toLowerCase() === novoParticipante.toLowerCase())
+
+		if (!!repetido) {
 			setErro('Nomes duplicados não são permitidos!')
 			setTimeout(() => {
 				setErro('');

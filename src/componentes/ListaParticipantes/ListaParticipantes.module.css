@@ -1,0 +1,19 @@
+.lista {
+}
+
+.lista_item {
+	font-size: 18px;
+	font-weight: 300;
+	margin: 8px 0;
+	padding: 0.5rem;
+	background-color: rgba(125, 125, 125, 0.5);
+	text-align: center;
+}
+
+.lista_item:first-child {
+	margin-top: 0;
+}
+
+.lista_item:last-child{
+	margin-bottom: 0;
+}

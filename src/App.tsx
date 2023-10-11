@@ -1,14 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { RecoilRoot } from "recoil";
-import Formulario from "./componentes/Formulario";
+import Sorteio from "./componentes/paginas/Sorteio";
+import Configuracao from "./componentes/paginas/Configuracao";
 
 function App() {
 	return (
 		<BrowserRouter>
 			<RecoilRoot>
 				<Routes>
-					<Route path="/" element={<Formulario />} />
-					<Route path="/sorteio" element={<Formulario />} />
+					<Route path="/" element={<Configuracao />} />
+					<Route path="/sorteio" element={<Sorteio />} />
 				</Routes>
 			</RecoilRoot>
 		</BrowserRouter>
